@@ -17,11 +17,17 @@ const images = [bmw, choice, eton, fab, huggies, indium, kimirica, kpit, pandg, 
 
 const HorizontalScrollImage = () => {
   return (
-    <div className="overflow-hidden bg-white px-4 py-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6">
+    <div className="overflow-hidden bg-white px-4 py-6 flex flex-col md:flex-row items-center gap-4 md:gap-6">
+      
+      {/* Text */}
       <p className="font-semibold text-gray-800 whitespace-nowrap md:mr-6 text-center md:text-left">
         Your trusted UI UX design agency
       </p>
+
+      {/* Divider */}
       <div className="hidden md:block w-px h-16 bg-gray-500 flex-shrink-0" />
+
+      {/* Scrolling Images */}
       <div className="relative w-full h-16 overflow-hidden flex items-center">
         <motion.div
           className="flex items-center h-full whitespace-nowrap"
